@@ -1,0 +1,166 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1e293b 0, #020617 50%, #020617 100%);
+  color: #0f172a;
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.main-header {
+  position: sticky;
+  top: 0.8rem;
+  z-index: 20;
+  margin-bottom: 2rem;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(16px);
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.55);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease,
+    transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  background: var(--accent-soft);
+  border-color: rgba(59, 130, 246, 0.6);
+  color: #bfdbfe;
+  transform: translateY(-1px);
+}
+
+.nav-links a.nav-cta {
+  background: #f97316;
+  border-color: #f97316;
+  color: #111827;
+  font-weight: 600;
+}
+
+.nav-links a.nav-cta:hover {
+  background: #fdba74;
+  border-color: #fdba74;
+}
+
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  width: 1.25rem;
+  height: 2px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  position: relative;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle-label span::before {
+  top: -0.32rem;
+}
+
+.nav-toggle-label span::after {
+  top: 0.32rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.brand-logo {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 20%, #60a5fa, #1d4ed8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.7);
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name strong {
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.brand-name span {
+  color: #9ca3af;
+  font-size: 0.75rem;
+}
+
+footer {
+  margin-top: 2rem;
+  color: #9ca3af;
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+footer .footer-inner {
+  padding: 1.1rem 1.3rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.9);
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: #bfdbfe;
+  text-decoration: none;
+}

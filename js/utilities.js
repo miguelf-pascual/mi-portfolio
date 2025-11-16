@@ -1,0 +1,1 @@
+document.getElementById("anyo").textContent = new Date().getFullYear();
